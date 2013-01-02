@@ -7,14 +7,25 @@
 //
 
 #import "AppDelegate.h"
+#import "AddStudentViewController.h"
+#import "ViewController2.h"
+//@synthesize window = _window;
+//@synthesize navigationController = _navigationController;
+
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+ 
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    return YES;
-}
+    
+    UITableViewController *loginTableViewController = [[UITableViewController alloc] initWithNibName:@"LoginTableViewController" bundle:nil];
+    self.navigationController = [[UINavigationController alloc] initWithRootViewController:loginTableViewController];
+    self.window.rootViewController = self.navigationController;
+    [self.window makeKeyAndVisible];
+    return YES;}
 							
 - (void)applicationWillResignActive:(UIApplication *)application
 {
