@@ -160,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2170" y="-2179"/>
+            <point key="canvasLocation" x="-2371" y="-2567"/>
         </scene>
         <!--View Controller1-->
         <scene sceneID="AdM-2v-mRw">
@@ -312,7 +312,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B7P-bu-Rf2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1592" y="-2203"/>
+            <point key="canvasLocation" x="-1888" y="-2539"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="fsc-WX-REa">
@@ -342,9 +342,37 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0tE-lm-Gid" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1869" y="-1533"/>
+            <point key="canvasLocation" x="-2085" y="-1793"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="ReturnKeyButton:"/>
+                <relationship kind="action" name="logInButton:"/>
+                <relationship kind="action" name="saveAccount:"/>
+                <relationship kind="outlet" name="textFieldPassword" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textFielduserName" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="ViewController1" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController1.h"/>
+            <relationships>
+                <relationship kind="action" name="addstudent:"/>
+                <relationship kind="outlet" name="textFieldCollege" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textFieldEmail" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textFieldFname" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textFieldLname" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textFieldMajor" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textFieldsetPassword" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="textFieldsetUserName" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
