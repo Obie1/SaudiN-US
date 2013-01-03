@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "AppDelegate.h"
 #import "ViewController2.h"
+#import "CollectionViewController.h"
 
 
 
@@ -54,9 +55,18 @@
         [alert show];
         
     }
-    if([self authenticate:_textFielduserName.text withPassowrd:_textFieldPassword.text])
+    NSInteger pass = [self authenticate:_textFielduserName.text withPassowrd:_textFieldPassword.text];
+    if(pass == 1)
     {
-        //[self ]
+         
+            }
+    else
+    {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"You Must Enter Correct UserName And Password" message:@"Please Enter UserName And Password" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
+        [alert show];
+        _textFieldPassword.text = @"";
+        _textFielduserName.text = @"";
+        [self viewDidLoad];
     }
     
     
@@ -101,6 +111,8 @@
         
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Alert" message:@"Logged In" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
         [alert show];
+       
+
         return true;
     }else
     {
