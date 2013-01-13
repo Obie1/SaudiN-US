@@ -7,6 +7,7 @@
 //
 
 #import "CollectionViewController.h"
+#import "CollectionViewCell.h"
 
 @interface CollectionViewController ()
 
@@ -35,12 +36,17 @@
     // Dispose of any resources that can be recreated.
 }
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
-    return 10;
+    return 20;
 }
 -(UICollectionViewCell*)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     static NSString *identifier = @"Cell";
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
-    [cell setBackgroundColor:[UIColor redColor]];
+    CollectionViewCell *cell = (CollectionViewCell*)[collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
+    int imageNumber = 0;
+    int imageNumber1 = 1;
+    cell.imageView.image = [UIImage imageNamed: @"imageicon0.jpg"];
+    cell.imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"imageicon%d.jpg",imageNumber1]];
+    
     return cell;
+    
 }
 @end

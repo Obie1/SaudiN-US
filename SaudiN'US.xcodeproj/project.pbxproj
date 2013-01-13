@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		544444E616A344BD0004E4CC /* Universities.m in Sources */ = {isa = PBXBuildFile; fileRef = 544444E516A344BD0004E4CC /* Universities.m */; };
 		549639121695475100D9EFA4 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 549639111695475100D9EFA4 /* CollectionViewController.m */; };
+		5496391A169A7FBB00D9EFA4 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54963919169A7FBB00D9EFA4 /* CollectionViewCell.m */; };
+		5496391F169A84B000D9EFA4 /* imageicon1@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5496391D169A84B000D9EFA4 /* imageicon1@2x.jpg */; };
+		54963923169A895E00D9EFA4 /* imageicon0@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54963922169A895E00D9EFA4 /* imageicon0@2x.jpg */; };
 		54AE6B61165359AE0062B9A4 /* n.png in Resources */ = {isa = PBXBuildFile; fileRef = 54AE6B60165359AE0062B9A4 /* n.png */; };
 		54AE6B6516537CC00062B9A4 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AE6B6316537CC00062B9A4 /* ViewController1.m */; };
 		54AE6B6616537CC00062B9A4 /* ViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54AE6B6416537CC00062B9A4 /* ViewController1.xib */; };
@@ -28,7 +32,6 @@
 		54AFEDBF169166DC00EB13CE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BF8CA316535724007A45D8 /* UIKit.framework */; };
 		54AFEDC0169166DC00EB13CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BF8CA516535724007A45D8 /* Foundation.framework */; };
 		54AFEDC1169166DC00EB13CE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BF8CA716535724007A45D8 /* CoreGraphics.framework */; };
-		54AFEDE01691805800EB13CE /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AFEDDF1691805800EB13CE /* ViewController2.m */; };
 		54BF8CA416535724007A45D8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BF8CA316535724007A45D8 /* UIKit.framework */; };
 		54BF8CA616535724007A45D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BF8CA516535724007A45D8 /* Foundation.framework */; };
 		54BF8CA816535724007A45D8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BF8CA716535724007A45D8 /* CoreGraphics.framework */; };
@@ -46,8 +49,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		544444E416A344BD0004E4CC /* Universities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Universities.h; sourceTree = "<group>"; };
+		544444E516A344BD0004E4CC /* Universities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Universities.m; sourceTree = "<group>"; };
 		549639101695475100D9EFA4 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		549639111695475100D9EFA4 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
+		54963918169A7FBB00D9EFA4 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		54963919169A7FBB00D9EFA4 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		5496391D169A84B000D9EFA4 /* imageicon1@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "imageicon1@2x.jpg"; sourceTree = "<group>"; };
+		54963922169A895E00D9EFA4 /* imageicon0@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "imageicon0@2x.jpg"; sourceTree = "<group>"; };
 		54AE6B60165359AE0062B9A4 /* n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = n.png; sourceTree = "<group>"; };
 		54AE6B6216537CC00062B9A4 /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
 		54AE6B6316537CC00062B9A4 /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
@@ -70,8 +79,6 @@
 		54AE6B8E165618910062B9A4 /* AddStudentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddStudentViewController.m; sourceTree = "<group>"; };
 		54AE6B8F165618910062B9A4 /* AddStudentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddStudentViewController.xib; sourceTree = "<group>"; };
 		54AFEDBD169166DC00EB13CE /* MainTabelView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MainTabelView.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		54AFEDDE1691805800EB13CE /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
-		54AFEDDF1691805800EB13CE /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
 		54BF8C9F16535724007A45D8 /* SaudiN'US.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SaudiN'US.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54BF8CA316535724007A45D8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		54BF8CA516535724007A45D8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -128,6 +135,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5496391B169A846A00D9EFA4 /* CellImages */ = {
+			isa = PBXGroup;
+			children = (
+				54963922169A895E00D9EFA4 /* imageicon0@2x.jpg */,
+				5496391D169A84B000D9EFA4 /* imageicon1@2x.jpg */,
+			);
+			name = CellImages;
+			sourceTree = "<group>";
+		};
 		54AE6B72165613A30062B9A4 /* StudentData */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,13 +210,16 @@
 		54BF8CA916535725007A45D8 /* SaudiN'US */ = {
 			isa = PBXGroup;
 			children = (
+				5496391B169A846A00D9EFA4 /* CellImages */,
 				54BF8CB216535725007A45D8 /* AppDelegate.h */,
 				54BF8CB316535725007A45D8 /* AppDelegate.m */,
 				54BF8CBB16535725007A45D8 /* MainStoryboard.storyboard */,
+				544444E416A344BD0004E4CC /* Universities.h */,
+				544444E516A344BD0004E4CC /* Universities.m */,
+				54963918169A7FBB00D9EFA4 /* CollectionViewCell.h */,
+				54963919169A7FBB00D9EFA4 /* CollectionViewCell.m */,
 				549639101695475100D9EFA4 /* CollectionViewController.h */,
 				549639111695475100D9EFA4 /* CollectionViewController.m */,
-				54AFEDDE1691805800EB13CE /* ViewController2.h */,
-				54AFEDDF1691805800EB13CE /* ViewController2.m */,
 				54AE6B6216537CC00062B9A4 /* ViewController1.h */,
 				54AE6B6316537CC00062B9A4 /* ViewController1.m */,
 				54AE6B6416537CC00062B9A4 /* ViewController1.xib */,
@@ -353,6 +372,8 @@
 				54BF8CCE1653583B007A45D8 /* Default.png in Resources */,
 				54AE6B61165359AE0062B9A4 /* n.png in Resources */,
 				54AE6B6616537CC00062B9A4 /* ViewController1.xib in Resources */,
+				5496391F169A84B000D9EFA4 /* imageicon1@2x.jpg in Resources */,
+				54963923169A895E00D9EFA4 /* imageicon0@2x.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,8 +407,9 @@
 				54BF8CB416535725007A45D8 /* AppDelegate.m in Sources */,
 				54BF8CC016535725007A45D8 /* ViewController.m in Sources */,
 				54AE6B6516537CC00062B9A4 /* ViewController1.m in Sources */,
-				54AFEDE01691805800EB13CE /* ViewController2.m in Sources */,
 				549639121695475100D9EFA4 /* CollectionViewController.m in Sources */,
+				5496391A169A7FBB00D9EFA4 /* CollectionViewCell.m in Sources */,
+				544444E616A344BD0004E4CC /* Universities.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

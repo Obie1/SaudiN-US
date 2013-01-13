@@ -8,7 +8,6 @@
 
 #import "ViewController.h"
 #import "AppDelegate.h"
-#import "ViewController2.h"
 #import "CollectionViewController.h"
 
 
@@ -25,6 +24,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+   
     
 }
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
@@ -35,7 +35,27 @@
     }
     return NO;
 }
+-(void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    if(textField == self.textFieldPassword||textField == self.textFielduserName)
+    {
+        
+    }
+    
+}
+-(void)textFieldDidEndEditing:(UITextField *)textField
+{
+    if(self.textFielduserName.text == @"" || self.textFieldPassword.text == @"")
+    {
+        UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"You must Enter UserName and Password to Sign In" message:@"please Enter UserName and Password" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
+        [alert show];
+        [self performSegueWithIdentifier:@"username" sender:self];
+         _lblFail.text = @"WRONG INFO";
+    }
+    else{
 
+    }
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -48,44 +68,35 @@
 }
 
 - (IBAction)logInButton:(id)sender {
-    if([self.textFielduserName.text isEqualToString:@""])
+    if([self.textFielduserName.text isEqualToString:@""]||[self.textFieldPassword.text isEqualToString:@""])
     {
         
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"You must Enter UserName and Password to Sign In" message:@"please Enter UserName and Password" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
         [alert show];
+        [self performSegueWithIdentifier:@"username" sender:self];
         
     }
-    NSInteger pass = [self authenticate:_textFielduserName.text withPassowrd:_textFieldPassword.text];
-    if(pass == 1)
+    
+  
+    else if([self authenticate:_textFielduserName.text withPassowrd:_textFieldPassword.text])
     {
-         
-            }
+        [self performSegueWithIdentifier:@"PASS" sender:self];
+    }
     else
     {
+        [self performSegueWithIdentifier:@"username" sender:self];
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"You Must Enter Correct UserName And Password" message:@"Please Enter UserName And Password" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
         [alert show];
         _textFieldPassword.text = @"";
         _textFielduserName.text = @"";
-        [self viewDidLoad];
+        _lblFail.text = @"WRONG INFO";
     }
     
     
 }
 -(bool) authenticate:(NSString*) username withPassowrd:(NSString*) password
 {
-  //  NSError *error;
-  //  NSURL *url = [NSURL URLWithString:kGETUrl];
-   // NSData *data = [NSData dataWithContentsOfURL:url];
-    
-   // json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&error];
-   // NSString *getusername;
-   // NSString *getpassword;
-   // getusername = data.accessibilityValue;
- //   getpassword = data.accessibilityHint;
-   // NSString *info = [json objectAtIndex:1];
-    //getusername = [info objectForKey:getusername];
-    //getusername = info.accessibilityValue;
-   //TODO: NSMutableArray = []
+  
     if([username isEqualToString:@""]||[password isEqualToString:@""])
     {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"alert" message:@"please Fill all the fields" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];
@@ -102,11 +113,6 @@
     
     if ([strResult isEqualToString:@"1"])
     {
-        // i need to get the control for main navigation controller
-       AppDelegate *appDelegate = [[UIApplication sharedApplication]delegate];
-        [appDelegate.navigationController popToRootViewControllerAnimated:NO];
-        ViewController2 *viewcontroller2 = [[ViewController2 alloc]initWithNibName:@"ViewController2" bundle:nil];
-        [appDelegate.navigationController pushViewController: viewcontroller2 animated: YES];
         
         
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Alert" message:@"Logged In" delegate:self cancelButtonTitle:@"ok" otherButtonTitles:nil, nil];

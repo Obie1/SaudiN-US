@@ -20,6 +20,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *textFieldPassword;
 - (IBAction)saveAccount:(id)sender;
 - (IBAction)logInButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *lblFail;
 -(IBAction)ReturnKeyButton:(id)sender;
 
 @end
