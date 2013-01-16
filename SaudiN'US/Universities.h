@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Universities : UITableViewController
+@interface Universities : UITableViewController<UITableViewDataSource>
+{
+    NSArray *tableData;
+}
+@property (nonatomic,retain)NSArray *tableData;
 
 @end

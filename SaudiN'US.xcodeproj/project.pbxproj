@@ -8,10 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		544444E616A344BD0004E4CC /* Universities.m in Sources */ = {isa = PBXBuildFile; fileRef = 544444E516A344BD0004E4CC /* Universities.m */; };
+		544444EE16A692790004E4CC /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 544444E816A692790004E4CC /* 1.png */; };
+		544444EF16A692790004E4CC /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 544444E916A692790004E4CC /* 2.jpg */; };
+		544444F016A692790004E4CC /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 544444EA16A692790004E4CC /* 3.jpg */; };
+		544444F116A692790004E4CC /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 544444EB16A692790004E4CC /* 4.jpg */; };
+		544444F216A692790004E4CC /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 544444EC16A692790004E4CC /* 5.jpg */; };
+		544444F316A692790004E4CC /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 544444ED16A692790004E4CC /* 6.jpg */; };
 		549639121695475100D9EFA4 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 549639111695475100D9EFA4 /* CollectionViewController.m */; };
 		5496391A169A7FBB00D9EFA4 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54963919169A7FBB00D9EFA4 /* CollectionViewCell.m */; };
-		5496391F169A84B000D9EFA4 /* imageicon1@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5496391D169A84B000D9EFA4 /* imageicon1@2x.jpg */; };
-		54963923169A895E00D9EFA4 /* imageicon0@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54963922169A895E00D9EFA4 /* imageicon0@2x.jpg */; };
 		54AE6B61165359AE0062B9A4 /* n.png in Resources */ = {isa = PBXBuildFile; fileRef = 54AE6B60165359AE0062B9A4 /* n.png */; };
 		54AE6B6516537CC00062B9A4 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 54AE6B6316537CC00062B9A4 /* ViewController1.m */; };
 		54AE6B6616537CC00062B9A4 /* ViewController1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 54AE6B6416537CC00062B9A4 /* ViewController1.xib */; };
@@ -51,12 +55,16 @@
 /* Begin PBXFileReference section */
 		544444E416A344BD0004E4CC /* Universities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Universities.h; sourceTree = "<group>"; };
 		544444E516A344BD0004E4CC /* Universities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Universities.m; sourceTree = "<group>"; };
+		544444E816A692790004E4CC /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		544444E916A692790004E4CC /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		544444EA16A692790004E4CC /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		544444EB16A692790004E4CC /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		544444EC16A692790004E4CC /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		544444ED16A692790004E4CC /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
 		549639101695475100D9EFA4 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		549639111695475100D9EFA4 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		54963918169A7FBB00D9EFA4 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		54963919169A7FBB00D9EFA4 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
-		5496391D169A84B000D9EFA4 /* imageicon1@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "imageicon1@2x.jpg"; sourceTree = "<group>"; };
-		54963922169A895E00D9EFA4 /* imageicon0@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "imageicon0@2x.jpg"; sourceTree = "<group>"; };
 		54AE6B60165359AE0062B9A4 /* n.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = n.png; sourceTree = "<group>"; };
 		54AE6B6216537CC00062B9A4 /* ViewController1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController1.h; sourceTree = "<group>"; };
 		54AE6B6316537CC00062B9A4 /* ViewController1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController1.m; sourceTree = "<group>"; };
@@ -138,8 +146,12 @@
 		5496391B169A846A00D9EFA4 /* CellImages */ = {
 			isa = PBXGroup;
 			children = (
-				54963922169A895E00D9EFA4 /* imageicon0@2x.jpg */,
-				5496391D169A84B000D9EFA4 /* imageicon1@2x.jpg */,
+				544444E816A692790004E4CC /* 1.png */,
+				544444E916A692790004E4CC /* 2.jpg */,
+				544444EA16A692790004E4CC /* 3.jpg */,
+				544444EB16A692790004E4CC /* 4.jpg */,
+				544444EC16A692790004E4CC /* 5.jpg */,
+				544444ED16A692790004E4CC /* 6.jpg */,
 			);
 			name = CellImages;
 			sourceTree = "<group>";
@@ -372,8 +384,12 @@
 				54BF8CCE1653583B007A45D8 /* Default.png in Resources */,
 				54AE6B61165359AE0062B9A4 /* n.png in Resources */,
 				54AE6B6616537CC00062B9A4 /* ViewController1.xib in Resources */,
-				5496391F169A84B000D9EFA4 /* imageicon1@2x.jpg in Resources */,
-				54963923169A895E00D9EFA4 /* imageicon0@2x.jpg in Resources */,
+				544444EE16A692790004E4CC /* 1.png in Resources */,
+				544444EF16A692790004E4CC /* 2.jpg in Resources */,
+				544444F016A692790004E4CC /* 3.jpg in Resources */,
+				544444F116A692790004E4CC /* 4.jpg in Resources */,
+				544444F216A692790004E4CC /* 5.jpg in Resources */,
+				544444F316A692790004E4CC /* 6.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
