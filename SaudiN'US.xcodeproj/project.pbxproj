@@ -14,6 +14,16 @@
 		544444F116A692790004E4CC /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 544444EB16A692790004E4CC /* 4.jpg */; };
 		544444F216A692790004E4CC /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 544444EC16A692790004E4CC /* 5.jpg */; };
 		544444F316A692790004E4CC /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 544444ED16A692790004E4CC /* 6.jpg */; };
+		544444F616A7BDAD0004E4CC /* iSMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 544444F516A7BDAD0004E4CC /* iSMainViewController.m */; };
+		544444FB16A7CEEC0004E4CC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 544444FA16A7CEEC0004E4CC /* MapKit.framework */; };
+		544444FD16A7CF040004E4CC /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 544444FC16A7CF040004E4CC /* CoreLocation.framework */; };
+		5444450016A7CFF30004E4CC /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 544444FF16A7CFF30004E4CC /* MapViewController.m */; };
+		5444450716A7DD580004E4CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BF8CA316535724007A45D8 /* UIKit.framework */; };
+		5444450816A7DD580004E4CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BF8CA516535724007A45D8 /* Foundation.framework */; };
+		5444450916A7DD580004E4CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54BF8CA716535724007A45D8 /* CoreGraphics.framework */; };
+		5444453216A7DFFF0004E4CC /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5444453116A7DFFF0004E4CC /* PostViewController.m */; };
+		5444453516A7E0280004E4CC /* ReadPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5444453416A7E0280004E4CC /* ReadPostViewController.m */; };
+		5444453816A8BA1D0004E4CC /* DetailReadPostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5444453716A8BA1C0004E4CC /* DetailReadPostViewController.m */; };
 		549639121695475100D9EFA4 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 549639111695475100D9EFA4 /* CollectionViewController.m */; };
 		5496391A169A7FBB00D9EFA4 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 54963919169A7FBB00D9EFA4 /* CollectionViewCell.m */; };
 		54AE6B61165359AE0062B9A4 /* n.png in Resources */ = {isa = PBXBuildFile; fileRef = 54AE6B60165359AE0062B9A4 /* n.png */; };
@@ -61,6 +71,19 @@
 		544444EB16A692790004E4CC /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
 		544444EC16A692790004E4CC /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
 		544444ED16A692790004E4CC /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		544444F416A7BDAD0004E4CC /* iSMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iSMainViewController.h; sourceTree = "<group>"; };
+		544444F516A7BDAD0004E4CC /* iSMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iSMainViewController.m; sourceTree = "<group>"; };
+		544444FA16A7CEEC0004E4CC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		544444FC16A7CF040004E4CC /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		544444FE16A7CFF30004E4CC /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		544444FF16A7CFF30004E4CC /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		5444450516A7DD580004E4CC /* Post.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Post.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5444453016A7DFFE0004E4CC /* PostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
+		5444453116A7DFFF0004E4CC /* PostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
+		5444453316A7E0280004E4CC /* ReadPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadPostViewController.h; sourceTree = "<group>"; };
+		5444453416A7E0280004E4CC /* ReadPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadPostViewController.m; sourceTree = "<group>"; };
+		5444453616A8BA1B0004E4CC /* DetailReadPostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailReadPostViewController.h; sourceTree = "<group>"; };
+		5444453716A8BA1C0004E4CC /* DetailReadPostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailReadPostViewController.m; sourceTree = "<group>"; };
 		549639101695475100D9EFA4 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
 		549639111695475100D9EFA4 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		54963918169A7FBB00D9EFA4 /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
@@ -109,6 +132,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		5444450216A7DD580004E4CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5444450716A7DD580004E4CC /* UIKit.framework in Frameworks */,
+				5444450816A7DD580004E4CC /* Foundation.framework in Frameworks */,
+				5444450916A7DD580004E4CC /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54AE6B68165613A30062B9A4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -134,6 +167,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				544444FD16A7CF040004E4CC /* CoreLocation.framework in Frameworks */,
+				544444FB16A7CEEC0004E4CC /* MapKit.framework in Frameworks */,
 				54BF8CA416535724007A45D8 /* UIKit.framework in Frameworks */,
 				54BF8CA616535724007A45D8 /* Foundation.framework in Frameworks */,
 				54BF8CA816535724007A45D8 /* CoreGraphics.framework in Frameworks */,
@@ -204,6 +239,7 @@
 				54BF8C9F16535724007A45D8 /* SaudiN'US.app */,
 				54AE6B6B165613A30062B9A4 /* StudentData.app */,
 				54AFEDBD169166DC00EB13CE /* MainTabelView.app */,
+				5444450516A7DD580004E4CC /* Post.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -211,6 +247,8 @@
 		54BF8CA216535724007A45D8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				544444FC16A7CF040004E4CC /* CoreLocation.framework */,
+				544444FA16A7CEEC0004E4CC /* MapKit.framework */,
 				54BF8CA316535724007A45D8 /* UIKit.framework */,
 				54BF8CA516535724007A45D8 /* Foundation.framework */,
 				54BF8CA716535724007A45D8 /* CoreGraphics.framework */,
@@ -226,6 +264,16 @@
 				54BF8CB216535725007A45D8 /* AppDelegate.h */,
 				54BF8CB316535725007A45D8 /* AppDelegate.m */,
 				54BF8CBB16535725007A45D8 /* MainStoryboard.storyboard */,
+				5444453016A7DFFE0004E4CC /* PostViewController.h */,
+				5444453116A7DFFF0004E4CC /* PostViewController.m */,
+				5444453316A7E0280004E4CC /* ReadPostViewController.h */,
+				5444453416A7E0280004E4CC /* ReadPostViewController.m */,
+				5444453616A8BA1B0004E4CC /* DetailReadPostViewController.h */,
+				5444453716A8BA1C0004E4CC /* DetailReadPostViewController.m */,
+				544444FE16A7CFF30004E4CC /* MapViewController.h */,
+				544444FF16A7CFF30004E4CC /* MapViewController.m */,
+				544444F416A7BDAD0004E4CC /* iSMainViewController.h */,
+				544444F516A7BDAD0004E4CC /* iSMainViewController.m */,
 				544444E416A344BD0004E4CC /* Universities.h */,
 				544444E516A344BD0004E4CC /* Universities.m */,
 				54963918169A7FBB00D9EFA4 /* CollectionViewCell.h */,
@@ -271,6 +319,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		5444450416A7DD580004E4CC /* Post */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5444452D16A7DD580004E4CC /* Build configuration list for PBXNativeTarget "Post" */;
+			buildPhases = (
+				5444450116A7DD580004E4CC /* Sources */,
+				5444450216A7DD580004E4CC /* Frameworks */,
+				5444450316A7DD580004E4CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Post;
+			productName = Post;
+			productReference = 5444450516A7DD580004E4CC /* Post.app */;
+			productType = "com.apple.product-type.application";
+		};
 		54AE6B6A165613A30062B9A4 /* StudentData */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 54AE6B87165613A40062B9A4 /* Build configuration list for PBXNativeTarget "StudentData" */;
@@ -346,11 +411,19 @@
 				54BF8C9E16535724007A45D8 /* SaudiN'US */,
 				54AE6B6A165613A30062B9A4 /* StudentData */,
 				54AFEDBC169166DC00EB13CE /* MainTabelView */,
+				5444450416A7DD580004E4CC /* Post */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		5444450316A7DD580004E4CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54AE6B69165613A30062B9A4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -396,6 +469,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5444450116A7DD580004E4CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		54AE6B67165613A30062B9A4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -426,6 +506,11 @@
 				549639121695475100D9EFA4 /* CollectionViewController.m in Sources */,
 				5496391A169A7FBB00D9EFA4 /* CollectionViewCell.m in Sources */,
 				544444E616A344BD0004E4CC /* Universities.m in Sources */,
+				544444F616A7BDAD0004E4CC /* iSMainViewController.m in Sources */,
+				5444450016A7CFF30004E4CC /* MapViewController.m in Sources */,
+				5444453216A7DFFF0004E4CC /* PostViewController.m in Sources */,
+				5444453516A7E0280004E4CC /* ReadPostViewController.m in Sources */,
+				5444453816A8BA1D0004E4CC /* DetailReadPostViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +544,30 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		5444452E16A7DD580004E4CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Post/Post-Prefix.pch";
+				INFOPLIST_FILE = "Post/Post-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5444452F16A7DD580004E4CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Post/Post-Prefix.pch";
+				INFOPLIST_FILE = "Post/Post-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		54AE6B88165613A40062B9A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -582,6 +691,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		5444452D16A7DD580004E4CC /* Build configuration list for PBXNativeTarget "Post" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5444452E16A7DD580004E4CC /* Debug */,
+				5444452F16A7DD580004E4CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		54AE6B87165613A40062B9A4 /* Build configuration list for PBXNativeTarget "StudentData" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

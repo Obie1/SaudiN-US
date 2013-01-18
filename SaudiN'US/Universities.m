@@ -25,7 +25,7 @@
 
 - (void)viewDidLoad
 {
-    self.tableData =[[NSArray alloc]initWithObjects:@"Top 10 Univ",@"Approved Univ By Sacam", nil];
+    self.tableData =[[NSArray alloc]initWithObjects:@"Top 10 Universities",@"Approved By SACAM Top 10",@"Search University" ,nil];
     [super viewDidLoad];
 
     // Uncomment the following line to preserve selection between presentations.
