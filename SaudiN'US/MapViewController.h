@@ -12,5 +12,7 @@
 @interface MapViewController : UIViewController
 @property (weak, nonatomic) IBOutlet MKMapView *mapView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityindicator;
+- (IBAction)Search:(id)sender;
+@property (weak, nonatomic) IBOutlet UISearchBar *SearchBar;
 
 @end

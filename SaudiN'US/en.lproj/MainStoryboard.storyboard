@@ -558,20 +558,42 @@
                             </mapView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="SDx-Xs-RQQ"/>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="z9f-gQ-oC6"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCj-50-GY9">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="Search:" destination="m6l-B7-SGG" eventType="touchUpInside" id="kEN-Cy-HNK"/>
+                                </connections>
+                            </button>
+                            <searchBar contentMode="redraw" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="pKf-B5-Gsb">
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="bCj-50-GY9" firstAttribute="leading" secondItem="blB-af-x8K" secondAttribute="leading" constant="107" id="0qs-XU-V7l"/>
                             <constraint firstItem="z9f-gQ-oC6" firstAttribute="top" secondItem="SDx-Xs-RQQ" secondAttribute="top" type="default" id="6DJ-Ga-KxR"/>
                             <constraint firstItem="9H0-fJ-FNV" firstAttribute="trailing" secondItem="blB-af-x8K" secondAttribute="trailing" type="default" id="7AX-iL-uts"/>
                             <constraint firstItem="z9f-gQ-oC6" firstAttribute="leading" secondItem="SDx-Xs-RQQ" secondAttribute="leading" type="default" id="8jV-qN-Bd2"/>
-                            <constraint firstItem="SDx-Xs-RQQ" firstAttribute="centerX" secondItem="9H0-fJ-FNV" secondAttribute="centerX" type="default" id="RQV-Pf-Cnt"/>
+                            <constraint firstItem="pKf-B5-Gsb" firstAttribute="top" secondItem="blB-af-x8K" secondAttribute="top" type="default" id="Zmt-24-C5i"/>
                             <constraint firstItem="SDx-Xs-RQQ" firstAttribute="top" secondItem="blB-af-x8K" secondAttribute="top" constant="97" id="bY6-Zm-g38"/>
+                            <constraint firstItem="pKf-B5-Gsb" firstAttribute="trailing" secondItem="blB-af-x8K" secondAttribute="trailing" type="default" id="bhZ-mr-uZo"/>
                             <constraint firstItem="9H0-fJ-FNV" firstAttribute="leading" secondItem="blB-af-x8K" secondAttribute="leading" type="default" id="i22-g9-X1i"/>
                             <constraint firstAttribute="bottom" secondItem="9H0-fJ-FNV" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="kpE-Cr-9yF"/>
+                            <constraint firstAttribute="bottom" secondItem="bCj-50-GY9" secondAttribute="bottom" constant="68" id="mf9-99-bHP"/>
+                            <constraint firstItem="pKf-B5-Gsb" firstAttribute="leading" secondItem="blB-af-x8K" secondAttribute="leading" type="default" id="tG2-4t-cjF"/>
+                            <constraint firstItem="pKf-B5-Gsb" firstAttribute="centerX" secondItem="z9f-gQ-oC6" secondAttribute="centerX" type="default" id="y8t-HW-QFo"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="more" id="YAK-5l-zKf"/>
                     <connections>
+                        <outlet property="SearchBar" destination="pKf-B5-Gsb" id="Zm9-qP-fXG"/>
                         <outlet property="activityindicator" destination="z9f-gQ-oC6" id="pM2-U2-EHz"/>
                         <outlet property="mapView" destination="9H0-fJ-FNV" id="GOp-E7-vyh"/>
                     </connections>
@@ -693,6 +715,7 @@
                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="125" id="Ojb-gH-5UM"/>
+                                    <constraint firstAttribute="width" constant="240" id="nH2-jY-Frh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -713,15 +736,14 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Zi3-y9-JKw" firstAttribute="top" secondItem="XBQ-Cu-HMX" secondAttribute="top" constant="-6" id="0Yc-d1-RIn"/>
+                            <constraint firstItem="TpP-v0-57Q" firstAttribute="leading" secondItem="XBQ-Cu-HMX" secondAttribute="leading" constant="34" id="2sS-Xv-fc1"/>
                             <constraint firstItem="WBd-P6-jB4" firstAttribute="leading" secondItem="XBQ-Cu-HMX" secondAttribute="leading" constant="40" id="33y-D6-jIk"/>
-                            <constraint firstItem="TpP-v0-57Q" firstAttribute="top" secondItem="XBQ-Cu-HMX" secondAttribute="top" constant="132" id="Djj-lK-lVJ"/>
                             <constraint firstAttribute="trailing" secondItem="RvR-tp-v9c" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="IEx-Wj-CLT"/>
-                            <constraint firstItem="Zi3-y9-JKw" firstAttribute="centerX" secondItem="TpP-v0-57Q" secondAttribute="centerX" type="default" id="KYj-0B-xJn"/>
                             <constraint firstItem="WBd-P6-jB4" firstAttribute="baseline" secondItem="RvR-tp-v9c" secondAttribute="baseline" type="default" id="Urh-OF-oFe"/>
-                            <constraint firstItem="WBd-P6-jB4" firstAttribute="leading" secondItem="TpP-v0-57Q" secondAttribute="leading" type="default" id="eQM-YG-D0V"/>
                             <constraint firstItem="Zi3-y9-JKw" firstAttribute="leading" secondItem="XBQ-Cu-HMX" secondAttribute="leading" type="default" id="ehE-iz-muG"/>
                             <constraint firstItem="Zi3-y9-JKw" firstAttribute="trailing" secondItem="XBQ-Cu-HMX" secondAttribute="trailing" type="default" id="fCQ-Xx-FQf"/>
                             <constraint firstItem="RvR-tp-v9c" firstAttribute="top" secondItem="XBQ-Cu-HMX" secondAttribute="top" constant="58" id="h7U-sU-TIB"/>
+                            <constraint firstItem="TpP-v0-57Q" firstAttribute="top" secondItem="XBQ-Cu-HMX" secondAttribute="top" constant="213" id="lw4-zB-Gdy"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Add Sell" id="JeQ-kk-fz7"/>
@@ -738,7 +760,7 @@
         <scene sceneID="ge5-mX-dmI">
             <objects>
                 <tabBarController definesPresentationContext="YES" id="2iF-bH-E8s" sceneMemberID="viewController">
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="8jb-We-ehZ">
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
@@ -796,6 +818,8 @@
         <class className="MapViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MapViewController.h"/>
             <relationships>
+                <relationship kind="action" name="Search:"/>
+                <relationship kind="outlet" name="SearchBar" candidateClass="UISearchBar"/>
                 <relationship kind="outlet" name="activityindicator" candidateClass="UIActivityIndicatorView"/>
                 <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
             </relationships>

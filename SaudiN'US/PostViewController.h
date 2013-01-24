@@ -10,7 +10,7 @@
 #define kPostURL @"http://localhost/postjson.php"
 #define kName @"name"
 #define kMessage @"message"
-@interface PostViewController : UIViewController<UITextFieldDelegate>
+@interface PostViewController : UIViewController<UITextFieldDelegate,UITextViewDelegate>
 {
     IBOutlet UITextField *nameText;
     IBOutlet UITextView *mesageText;

@@ -26,6 +26,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
 	// Do any additional setup after loading the view.
 }
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
@@ -35,6 +37,15 @@
         
     }
     return NO;
+}
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range
+ replacementText:(NSString *)text {
+    
+    if([text isEqualToString:@"\n"]) {
+        [textView resignFirstResponder];
+        return NO;
+    }
+    return YES;
 }
 
 -(void)postMessage:(NSString *) message withName:(NSString*) name{
