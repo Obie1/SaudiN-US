@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define kPostURL @"http://localhost/studentInfo.php"
+#define kPostURL @"http://172.24.199.126/studentInfo.php"
 #define kUsername @"username"
 #define kFname @"fname"
 #define kLname @"lname"

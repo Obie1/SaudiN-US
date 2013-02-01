@@ -59,7 +59,6 @@
 		54BF8CC9165357AB007A45D8 /* background.png.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 54BF8CC7165357AB007A45D8 /* background.png.jpg */; };
 		54BF8CCA165357AB007A45D8 /* icone.png.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 54BF8CC8165357AB007A45D8 /* icone.png.jpeg */; };
 		54BF8CCC165357DD007A45D8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 54BF8CCB165357DD007A45D8 /* Default.png */; };
-		54BF8CCE1653583B007A45D8 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 54BF8CCD1653583B007A45D8 /* Default.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -454,7 +453,6 @@
 				54BF8CC9165357AB007A45D8 /* background.png.jpg in Resources */,
 				54BF8CCA165357AB007A45D8 /* icone.png.jpeg in Resources */,
 				54BF8CCC165357DD007A45D8 /* Default.png in Resources */,
-				54BF8CCE1653583B007A45D8 /* Default.png in Resources */,
 				54AE6B61165359AE0062B9A4 /* n.png in Resources */,
 				54AE6B6616537CC00062B9A4 /* ViewController1.xib in Resources */,
 				544444EE16A692790004E4CC /* 1.png in Resources */,
@@ -698,6 +696,7 @@
 				5444452F16A7DD580004E4CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		54AE6B87165613A40062B9A4 /* Build configuration list for PBXNativeTarget "StudentData" */ = {
 			isa = XCConfigurationList;

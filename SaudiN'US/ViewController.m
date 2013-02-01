@@ -103,7 +103,7 @@
         [alert show];
         return false;
     }
-    NSString *strURL = [NSString stringWithFormat:@"http://localhost/Logged2.php?username=%@&password=%@",username, password];
+    NSString *strURL = [NSString stringWithFormat:@"http://172.24.199.126/Logged2.php?username=%@&password=%@",username, password];
     
     // to execute php code
     NSData *dataURL = [NSData dataWithContentsOfURL:[NSURL URLWithString:strURL]];

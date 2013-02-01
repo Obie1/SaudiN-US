@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#define kGETUrl @"http:/localhost/getjson.php"
+#define kGETUrl @"http://172.24.199.126/getjson.php"
 #define kUsername @"username"
 #define kPassword @"password"
 

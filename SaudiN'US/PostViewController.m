@@ -28,25 +28,28 @@
     [super viewDidLoad];
     
     
+    
 	// Do any additional setup after loading the view.
 }
 -(BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     if (textField) {
         [textField resignFirstResponder];
+        [self.tabBarController resignFirstResponder];
         
     }
     return NO;
 }
-- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range
- replacementText:(NSString *)text {
-    
-    if([text isEqualToString:@"\n"]) {
+
+-(BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text{
+    if([text isEqualToString:@"\n"])
+    {
         [textView resignFirstResponder];
         return NO;
     }
     return YES;
 }
+
 
 -(void)postMessage:(NSString *) message withName:(NSString*) name{
     if(name != nil && message != nil){
@@ -67,11 +70,14 @@
     nameText.text = nil;
     
 }
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+-(IBAction)ReturnKey:(id)sender
+{
+    [sender resignFirstResponder];
 }
 
 @end

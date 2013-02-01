@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailReadPostViewController : UIViewController
+@interface DetailReadPostViewController : UIViewController<UIScrollViewAccessibilityDelegate>
 
 @end

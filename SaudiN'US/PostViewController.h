@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#define kPostURL @"http://localhost/postjson.php"
+#define kPostURL @"http://172.24.199.126/postjson.php"
 #define kName @"name"
 #define kMessage @"message"
 @interface PostViewController : UIViewController<UITextFieldDelegate,UITextViewDelegate>
@@ -15,9 +15,10 @@
     IBOutlet UITextField *nameText;
     IBOutlet UITextView *mesageText;
     NSURLConnection *postConnection;
-    
-    
+  
 }
+
 -(IBAction)post:(id)sender;
+-(IBAction)ReturnKey:(id)sender;
 
 @end

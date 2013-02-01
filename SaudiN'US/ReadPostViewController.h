@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "DetailReadPostViewController.h"
-#define kGETUrl @"http://localhost/readpostjson.php"
+#define kGETUrl @"http://172.24.199.126/readpostjson.php"
 
 @interface ReadPostViewController : UITableViewController<UITableViewDataSource,UITableViewDelegate>
 {
