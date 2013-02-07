@@ -1,21 +1,20 @@
 //
-//  iSMainViewController.m
+//  PickerViewController.m
 //  SaudiN'US
 //
-//  Created by Obie Haiek on 1/17/13.
+//  Created by Obie Haiek on 2/5/13.
 //  Copyright (c) 2013 Obie Haiek. All rights reserved.
 //
 
-#import "iSMainViewController.h"
+#import "PickerViewController.h"
 
 
-@interface iSMainViewController ()
+@interface PickerViewController ()
 
 @end
 
-@implementation iSMainViewController
+@implementation PickerViewController
 
-@synthesize  UserNamelbl,userName;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,10 +26,8 @@
 
 - (void)viewDidLoad
 {
-    UserNamelbl.text = userName.text;
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,10 +36,4 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)MapButton:(id)sender {
-    
-    
-   
-    
-}
 @end

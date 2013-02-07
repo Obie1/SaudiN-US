@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "iSMainViewController.h"
 
 #define kGETUrl @"http://172.24.199.126/getjson.php"
 #define kUsername @"username"
@@ -15,12 +16,13 @@
 
 @interface ViewController : UIViewController<UITextFieldDelegate,UITableViewDelegate>{
     NSMutableArray *json;
+    iSMainViewController *ismainViewController;
 }
 @property (weak, nonatomic) IBOutlet UITextField *textFielduserName;
 @property (weak, nonatomic) IBOutlet UITextField *textFieldPassword;
-- (IBAction)saveAccount:(id)sender;
+- (IBAction)SaveAccount:(id)sender;
+
 - (IBAction)logInButton:(id)sender;
 @property (weak, nonatomic) IBOutlet UILabel *lblFail;
 -(IBAction)ReturnKeyButton:(id)sender;
-
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController1.h"
+#import "PickerViewController.h"
 
 @interface ViewController1 ()
 
@@ -33,6 +34,8 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    //PickerViewController.frame = CGRectMake(0, 460, 320, 261);
+
     
 }
 -(void) takeInfo:(NSString*) username withPassword:(NSString *) password withFname:(NSString*) fname withLname:(NSString*) lname withEmail:(NSString*) email withCollege:(NSString*) college withMajor:(NSString*) major
@@ -86,6 +89,7 @@
         [UIView setAnimationBeginsFromCurrentState:YES];
         self.view.frame= CGRectMake(self.view.frame.origin.x, (self.view.frame.origin.y - 75), self.view.frame.size.width, self.view.frame.size.height);
         [UIView commitAnimations];
+        [self performSegueWithIdentifier:@"PickCollege" sender:self];
         
     }
     else if (textField == self.textFieldMajor || textField ==self.textFieldEmail)
@@ -173,5 +177,7 @@
     _textFieldEmail.text = nil;
     _textFieldCollege.text = nil;
     
+}
+- (IBAction)hidebtn:(id)sender {
 }
 @end

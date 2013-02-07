@@ -9,6 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface iSMainViewController : UIViewController <UIViewControllerRestoration>
+{
+    UITextField *userName;
+    NSString *UserName;
+}
 - (IBAction)MapButton:(id)sender;
+@property (strong, nonatomic) IBOutlet UILabel *UserNamelbl;
+@property (retain, nonatomic) IBOutlet UITextField *userName;
 
 @end

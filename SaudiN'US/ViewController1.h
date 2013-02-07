@@ -18,14 +18,18 @@
 #define kMajor @"major"
 
 
-@interface ViewController1 : UIViewController <UITextFieldDelegate>
+@interface ViewController1 : UIViewController <UITextFieldDelegate,UIPickerViewDataSource,UIPickerViewDelegate>
 {
     NSURLConnection *studentinfoconnection;
     
+    IBOutlet UIPickerView *CollegePicker;
+    NSArray *colleges;
     
 }
 @property (weak, nonatomic) IBOutlet UITextField *textFieldFname;
+
 @property (weak, nonatomic) IBOutlet UITextField *textFieldLname;
+
 
 @property (weak, nonatomic) IBOutlet UITextField *textFieldsetUserName;
 

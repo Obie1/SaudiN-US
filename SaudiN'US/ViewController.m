@@ -12,11 +12,15 @@
 
 
 
-@interface ViewController ()
+@interface ViewController (){
+    @private
+    BOOL save_account;
+}
 
 @end
 
 @implementation ViewController
+@synthesize textFielduserName, textFieldPassword;
 -(IBAction)ReturnKeyButton:(id)sender{
     [sender resignFirstResponder];
 }
@@ -24,6 +28,17 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    if(save_account)
+    {
+        //self.textFielduserName.text =
+        
+        if([self authenticate:textFielduserName.text withPassowrd:textFieldPassword.text])
+        {
+            ismainViewController.userName = textFielduserName;
+            [self performSegueWithIdentifier:@"Pass" sender:self];
+            
+        }
+    }
    
     
 }
@@ -45,7 +60,7 @@
 }
 -(void)textFieldDidEndEditing:(UITextField *)textField
 {
-    if(self.textFielduserName.text == @"" || self.textFieldPassword.text == @"")
+    if([self.textFielduserName.text isEqualToString:@""] || [self.textFieldPassword.text isEqualToString:@""])
     {
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"You must Enter UserName and Password to Sign In" message:@"please Enter UserName and Password" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
         [alert show];
@@ -64,8 +79,12 @@
     
 }
 
-- (IBAction)saveAccount:(id)sender {
+- (IBAction)SaveAccount:(id)sender {
+    UISwitch *myswitch = sender;
+    save_account = myswitch;
+
 }
+
 
 - (IBAction)logInButton:(id)sender {
     if([self.textFielduserName.text isEqualToString:@""]||[self.textFieldPassword.text isEqualToString:@""])
@@ -78,17 +97,23 @@
     }
     
   
-    else if([self authenticate:_textFielduserName.text withPassowrd:_textFieldPassword.text])
+    else if([self authenticate:textFielduserName.text withPassowrd:textFieldPassword.text])
     {
+        NSString *User = textFielduserName.text;
+        //NSString *Password = _textFielduserName.text;
+        ismainViewController.userName = textFielduserName;
         [self performSegueWithIdentifier:@"PASS" sender:self];
+        
+        //ismainViewController.userName  = User;
+        
     }
     else
     {
         [self performSegueWithIdentifier:@"username" sender:self];
         UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"You Must Enter Correct UserName And Password" message:@"Please Enter UserName And Password" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
         [alert show];
-        _textFieldPassword.text = @"";
-        _textFielduserName.text = @"";
+        textFieldPassword.text = @"";
+        textFielduserName.text = @"";
         _lblFail.text = @"WRONG INFO";
     }
     
